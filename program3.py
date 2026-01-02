@@ -1,9 +1,5 @@
-text=input("enter text")
-word=text.split()
-word_count={}
-for w in word:
-    if w in word_count:
-        word_count[w]+=1
-    else:
-        word_count[w]=1
-print("word occurances:",word_count)
+s= input("Enter a string: ")
+freq = {}
+for ch in s:
+    freq[ch] = freq.get(ch, 0) + 1
+print(freq)
